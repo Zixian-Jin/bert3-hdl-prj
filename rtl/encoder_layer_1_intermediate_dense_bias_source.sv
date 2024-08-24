@@ -21,9 +21,6 @@ module encoder_layer_1_intermediate_dense_bias_rom #(
   logic [DWIDTH-1:0] q0_t0;
   logic [DWIDTH-1:0] q0_t1;
 
-  initial begin
-    $readmemh("/root/.mase/top/hardware/rtl/encoder_layer_1_intermediate_dense_bias_rom.dat", ram);
-  end
 
   assign q0 = q0_t1;
 
