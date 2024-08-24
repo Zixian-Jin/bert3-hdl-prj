@@ -25,7 +25,8 @@ async def test(dut):
 
 
 def main():
-    runner = get_runner('questa')
+    sim = os.getenv('SIM')
+    runner = get_runner(sim)
     
     sources = []
     rtl_dir = './../../rtl'
