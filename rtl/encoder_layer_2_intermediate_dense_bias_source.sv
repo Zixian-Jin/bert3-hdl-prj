@@ -21,9 +21,11 @@ module encoder_layer_2_intermediate_dense_bias_rom #(
   logic [DWIDTH-1:0] q0_t0;
   logic [DWIDTH-1:0] q0_t1;
 
+  `ifdef USE_REAL_DAT
   initial begin
     $readmemh("/root/.mase/top/hardware/rtl/encoder_layer_2_intermediate_dense_bias_rom.dat", ram);
   end
+  `endif
 
   assign q0 = q0_t1;
 

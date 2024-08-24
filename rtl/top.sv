@@ -5,6 +5,8 @@
 //     18/08/2024 23:18:40
 // =====================================
 `timescale 1ns/1ps
+//`define USE_REAL_DAT
+
 module top #(
     parameter df_split_DATA_IN_0_PRECISION_0 = 8,
     parameter df_split_DATA_IN_0_PRECISION_1 = 3,
