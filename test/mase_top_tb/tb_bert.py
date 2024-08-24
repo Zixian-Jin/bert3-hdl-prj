@@ -9,7 +9,7 @@ async def test(dut):
     import dill
     from cocotb.triggers import Timer
 
-    tb_path = Path.home() / ".mase" / "top" / "hardware" / "test" / "mase_top_tb"
+    tb_path = Path.home() / "bert3-hdl-prj" / "test" / "mase_top_tb"
     with open(tb_path / "tb_obj.dill", "rb") as f:
         tb = dill.load(f)(dut, fail_on_checks=True)
 
@@ -25,7 +25,7 @@ async def test(dut):
 
 
 def main():
-    runner = get_runner('verilator')
+    runner = get_runner('questa')
     
     sources = []
     rtl_dir = './../../rtl'
