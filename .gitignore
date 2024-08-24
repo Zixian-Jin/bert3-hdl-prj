@@ -1,0 +1,7 @@
+**/__pycache__/
+**/sim_build/**/*.*
+**/sim_build/**/*
+#**/obj_dir/**/*.*
+!*.vcd 
+!*.fst
+!*.wlf
